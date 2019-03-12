@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4" *ngFor="let topic of topics">
+        <div class="card" [routerLink]="topic.id">
+          <app-topic-card [topicId]="topic.id"></app-topic-card>
+        </div>
+    </div>
+  </div>
+</div>
